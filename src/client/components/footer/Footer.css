@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+.divided___title {
+	margin-top: 12px;
+}
+
+.no__divided__title {
+	display: none;
+}
+
+.stickyFooter__select {
+	float: right;
+	width: 220px;
+}
+
+.stickyFooter__bag {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	color: white;
+}
+
+@media (max-width: 1024px) {
+	.normal___footer {
+		display: none;
+	}
+	.divided___title {
+		display: none;
+	}
+	.no__divided__title {
+		display: block;
+	}
+}
+
+/* ant design breakpoint */
+@media (max-width: 576px) {
+	.stickyFooter__select {
+		float: left;
+	}
+}
+
+@media (max-width: 312px) {
+	.stickyFooter__select {
+		width: 180px;
+	}
+}

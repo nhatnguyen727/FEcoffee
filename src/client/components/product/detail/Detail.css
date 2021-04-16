@@ -1,0 +1,59 @@
+.parent__override {
+	margin: 0 -8vw 0 -8vw;
+	min-height: 60vh;
+}
+
+.panel__left {
+	position: fixed;
+	display: flex;
+	align-items: flex-start;
+	overflow: auto;
+	top: 76px;
+	bottom: 80px;
+	padding: 36px;
+	z-index: 1;
+	box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.panel__right {
+	background-color: #f7f7f7;
+	z-index: 0;
+	height: 100%;
+}
+
+.layout__customizations {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+}
+
+.layout__nutritionInfo {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+
+.size__imageProduct {
+	width: 360px;
+	height: 360px;
+}
+
+@media (max-width: 1280px) {
+	.size__imageProduct {
+		width: 280px;
+		height: 280px;
+	}
+}
+
+@media (max-width: 576px) {
+	.panel__left {
+		position: unset;
+	}
+}
+
+@media (max-width: 320px) {
+	.size__imageProduct {
+		width: 240px;
+		height: 240px;
+	}
+}

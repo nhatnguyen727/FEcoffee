@@ -1,0 +1,7 @@
+.profile__visibilityIcon {
+	cursor: pointer;
+	color: grey;
+	position: absolute;
+	left: 90%;
+	top: 16px;
+}

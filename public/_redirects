@@ -1,0 +1,4 @@
+# This is for Nelify.
+# React Router handles routing on the client-side (browser) so when you visit the non-root page (e.g. https://yoursite.netlify.com/login),
+# Netlify (server-side) does not know how to handle the route.
+/* /index.html 200

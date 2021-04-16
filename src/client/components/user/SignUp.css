@@ -1,0 +1,77 @@
+.signUp__header {
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.signUp__body {
+	display: grid;
+	place-items: center;
+	gap: 40px;
+}
+
+.signUp__header > a > img {
+	object-fit: contain;
+	height: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.signUp__heading {
+	color: rgba(0, 0, 0, 0.87);
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.signUp__rewards {
+	text-align: center;
+}
+
+.signUp__rewards > h4 {
+	color: rgba(0, 0, 0, 0.56);
+	letter-spacing: 1.4px;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.signUp__rewards > p {
+	color: rgba(0, 0, 0, 0.56);
+	line-height: 1.5;
+	max-width: 500px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.signUp__rewards > p > a {
+	color: rgba(0, 0, 0, 0.56);
+	text-decoration: underline;
+}
+
+.signUp__rewards > p > a:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 480px) {
+	.signUp__body {
+		gap: 30px;
+	}
+	.signUp__heading {
+		margin-right: auto;
+		padding: 0 20px;
+		font-size: 24px;
+	}
+	.signUp__rewards > h4 {
+		display: none;
+	}
+	.signUp__rewards {
+		text-align: left;
+		padding: 0 20px;
+	}
+	.signUp__rewards > p {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,89 @@
+.signUpForm {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	max-width: 500px;
+	min-height: 900px;
+	margin-bottom: 20px;
+}
+
+.signUpForm__container {
+	padding: 56px;
+}
+
+.signUpForm__section {
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.signUpForm__inputContainer {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.signUpForm__resetLinks {
+	margin-top: 20px;
+}
+
+.signUpForm__resetLinks > a {
+	display: block;
+	margin-bottom: 16px;
+	text-decoration: underline;
+	color: #00653e;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.signUpForm__resetLinks > a:hover {
+	text-decoration: none;
+}
+
+.signUpForm__visibilityIcon {
+	cursor: pointer;
+	color: grey;
+	position: absolute;
+	width: 14%;
+	text-align: center;
+	right: 0.1%;
+	top: 0;
+	transform: translateY(84%);
+}
+
+.signUpForm__rewards {
+	color: rgba(0, 0, 0, 0.56);
+	font-size: 16px;
+	margin: 36px 0;
+}
+
+.signUpForm__span {
+	color: rgba(0, 0, 0, 0.87);
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.signUpForm__form {
+	position: relative;
+	width: 100%;
+}
+
+@media (max-width: 480px) {
+	.signUpForm {
+		box-shadow: none;
+		min-height: 800px;
+	}
+	.signUpForm__container {
+		padding: 0 20px;
+	}
+	.signUpForm__section {
+		font-size: 16px;
+	}
+	.signUpForm__rewards {
+		font-size: 14px;
+	}
+	.signUpForm__span {
+		font-size: 14px;
+	}
+}

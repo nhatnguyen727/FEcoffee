@@ -1,0 +1,68 @@
+.font__heading__title {
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	color: #1e3932;
+	margin-bottom: 12px;
+}
+
+.font__heading__content {
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 1.1px;
+	color: #1e3932;
+}
+
+.featured__ad__titles {
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	color: #1e3932;
+	margin-bottom: 24px;
+}
+
+.featured__ad__contents {
+	font-size: 20px;
+	font-weight: 400;
+	color: #1e3932;
+	margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+	.font__heading__title {
+		font-size: 32px;
+	}
+
+	.font__heading__content {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 640px) {
+	.font__heading__title {
+		font-size: 24px;
+	}
+
+	.font__heading__content {
+		font-size: 14px;
+	}
+	.featured__ad__titles {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.featured__ad__contents {
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 480px) {
+	.font__heading__title {
+		font-size: 18px;
+	}
+
+	.font__heading__content {
+		font-size: 10px;
+	}
+}

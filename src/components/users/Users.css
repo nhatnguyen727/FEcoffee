@@ -1,0 +1,7 @@
+.users__visibilityIcon {
+	cursor: pointer;
+	color: grey;
+	position: absolute;
+	left: 94%;
+	top: 8px;
+}

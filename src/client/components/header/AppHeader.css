@@ -1,0 +1,116 @@
+.styled__header {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0 2px rgba(0, 0, 0, 0.07);
+	background-color: white;
+	height: 76px;
+	padding: 0;
+	/* for dropping shadow in product detail page */
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.font__menu {
+	font-weight: 900;
+	font-size: 14px;
+}
+
+.pos__btn {
+	margin-left: 12px !important;
+}
+
+.pos__link {
+	float: right;
+	font-family: 'SoDo Sans SemiBold';
+	margin-left: 0;
+}
+
+.container__logo {
+	float: left;
+	width: 8vw;
+	height: 100%;
+}
+
+.pos__logo {
+	cursor: 'pointer';
+	width: 48px;
+	margin: auto;
+	display: block;
+	margin-top: 16px;
+}
+
+.style__btn {
+	display: inline-block;
+	font-family: inherit;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 50px;
+	padding: 6px 16px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	outline: none;
+	font-size: 14px;
+}
+
+.style__btn:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+}
+
+@media (max-width: 1024px) {
+	.font__menu {
+		font-weight: 500;
+		font-size: 10px;
+		margin-right: -4px !important;
+	}
+	.pos__btn {
+		margin-left: 4px !important;
+		font-size: 10px !important;
+		width: 66px !important;
+	}
+	.pos__link {
+		margin-left: 4px !important;
+		font-size: 10px !important;
+	}
+	.pos__logo {
+		width: 40px;
+		margin-top: 22px;
+	}
+}
+
+@media (max-width: 640px) {
+	.font__menu {
+		display: none !important;
+	}
+	.pos__btn {
+		display: none !important;
+	}
+	.pos__link {
+		display: none !important;
+	}
+	.container__logo {
+		margin-left: 8vw;
+		width: 88px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.pos__logo {
+		width: 48px;
+		margin-top: 36px;
+		margin: unset;
+		display: inline;
+	}
+}
+
+@media (max-width: 480px) {
+	.style__btn {
+		font-size: 10px;
+	}
+}
