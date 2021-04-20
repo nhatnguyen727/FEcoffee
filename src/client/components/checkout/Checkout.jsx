@@ -1,10 +1,14 @@
 import React from 'react';
-import { Layout, Button, Descriptions, Collapse, Radio, Row, Col, Typography, Divider, Input } from 'antd';
+import { Layout, Button, Descriptions, Collapse, Radio, Row, Col, Typography, Divider, Input, message } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 import Cart from '../cart/Cart';
 import { IconFont } from '../../IconFont';
 import { useCheckout } from '../app-context/CheckoutProvider';
 import InfoForm from './InfoForm';
+
+import HeadShake from 'react-reveal/HeadShake';
+import WarningRoundedIcon from '@material-ui/icons/WarningRounded';
+
 
 const { Content } = Layout;
 const { Panel } = Collapse;
@@ -14,10 +18,35 @@ function Checkout() {
 	const { info, calculateSubtotal, coupon, saveOrder, loadingSuccess } = useCheckout();
 	const [openCouponInputOpened, setCouponInputOpened] = React.useState(false);
 	const [anotherCoupon, setAnotherCoupon] = React.useState(false);
+	const [paymentAccept, setPaymentAccept] = React.useState(true);
 
 	React.useMemo(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const warning = (warningMsg) => {
+		message.destroy();
+		message.warning({
+			content: <HeadShake>{warningMsg}</HeadShake>,
+			style: {
+				marginTop: '20vh',
+				fontSize: 16,
+				fontWeight: 500,
+			},
+			icon: <WarningRoundedIcon fontSize='large' style={{ color: '#ffc400' }} />,
+		});
+	};
+
+	const handlePayment = (e) => {
+		e.preventDefault();
+		const radio_value = e.target.value;
+		if (radio_value === "a" || radio_value === "b") {
+			setPaymentAccept(false);
+			warning("Phương thức thanh toán chưa hỗ trợ");
+		} else {
+			setPaymentAccept(true)
+		}
+	}
 
 	const handleCouponClick = (e) => {
 		e.preventDefault();
@@ -77,7 +106,7 @@ function Checkout() {
 			</Content>
 			<Descriptions title='Payment Methods' style={{ marginTop: '24px' }}>
 				<div style={{ backgroundColor: 'whitesmoke' }}>
-					<Radio.Group defaultValue='c' buttonStyle='solid' style={{ paddingTop: '18px', paddingLeft: '18px' }}>
+					<Radio.Group defaultValue='c' buttonStyle='solid' style={{ paddingTop: '18px', paddingLeft: '18px' }} onChange={handlePayment}>
 						<Radio.Button type='dashed' value='a' style={{ marginRight: '10px', marginBottom: '8px', width: 200 }}>
 							<IconFont type='icon-credit-card' style={{ verticalAlign: 'middle' }} />
 							<span style={{ verticalAlign: 'middle' }}> Credit/Debit Card</span>
@@ -132,9 +161,14 @@ function Checkout() {
 						<Divider />
 						<Row>
 							<Col span={24} className='flex justify-end'>
-								<Button type='primary' onClick={saveOrder} loading={loadingSuccess}>
-									Submit Order
-								</Button>
+								{
+									paymentAccept ? (<Button type='primary' onClick={saveOrder} loading={loadingSuccess}>
+										Submit Order
+									</Button>) : (<Button type='primary' loading={loadingSuccess} disabled>
+										Submit Order
+									</Button>)
+								}
+
 							</Col>
 						</Row>
 					</div>

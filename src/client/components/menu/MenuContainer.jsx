@@ -34,14 +34,7 @@ function MenuContainer() {
 		if (spinTimer === 0 && categoryLoading) {
 			setSpinMsg(
 				<>
-					{/* <p>
-						If you are waiting for more than 30 seconds, please refresh the page! It's because the backend API of this web app hosted at
-						Heroku (free tier). The server side goes to sleep after 30 minutes if there's no visitor and it needs about 30s to wake up.
-					</p>
-					<p>
-						Nếu bạn đợi lâu hơn 30 giây, hãy refresh lại page! Web app này được deploy tại Heroku (free tier). Trong vòng 30 phút không có
-						lượt truy cập sẽ off, nó cần từ 30s đến 1 phút để khởi động trở lại khi có lượt truy cập mới.
-					</p> */}
+					{}
 				</>
 			);
 		}

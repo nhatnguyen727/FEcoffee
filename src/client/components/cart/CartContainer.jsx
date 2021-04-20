@@ -17,6 +17,7 @@ function CartContainer() {
 	}, []);
 
 	const warning = (warningMsg) => {
+		message.destroy();
 		message.warning({
 			content: <HeadShake>{warningMsg}</HeadShake>,
 			style: {

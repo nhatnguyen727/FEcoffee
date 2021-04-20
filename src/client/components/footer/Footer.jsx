@@ -78,7 +78,7 @@ function Footer() {
 									</Title>
 									<a href='/loginAdmin'>
 										<Title level={4} style={{ fontSize: '114%', marginTop: 18, color: 'green', fontWeight: 'normal' }}>
-											© 2021 Starbucks Coffee Admin
+											© 2021 Sunn Coffee Admin
 										</Title>
 									</a>
 								</Col>

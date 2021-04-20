@@ -15,7 +15,7 @@ function FooterSecondary({ alignItems, paddingLeft, flexDirection }) {
 						<Link to='/'>Terms of Use </Link>
 						<Link to='/'>Cookie Preferences</Link>
 						<Link to='/loginAdmin'>
-							<p className='text-green-600'>© 2021 Starbucks Coffee Admin</p>
+							<p className='text-green-600'>© 2021 Sunn Coffee Admin</p>
 						</Link>
 					</div>
 				</div>

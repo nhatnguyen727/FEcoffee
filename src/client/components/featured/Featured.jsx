@@ -25,13 +25,13 @@ const cards = [
 	{
 		imgURL: 'https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-69093.png',
 		title: 'NEW Brown Sugar Oatmilk Shaken Espresso',
-		content: 'With Starbucks® Blonde Espresso, brown sugar and cinnamon shaken and topped with oatmilk to energize your day.',
+		content: 'With Sunn Blonde Espresso, brown sugar and cinnamon shaken and topped with oatmilk to energize your day.',
 		btnTitle: 'Order iced shaken espresso',
 	},
 	{
 		imgURL: 'https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-69094.png',
 		title: 'NEW Chocolate Almondmilk Shaken Espresso',
-		content: 'Cocoa, notes of malt and Starbucks® Blonde Espresso shaken together and topped with almondmilk to power you through.',
+		content: 'Cocoa, notes of malt and Sunn Blonde Espresso shaken together and topped with almondmilk to power you through.',
 		btnTitle: 'Order iced shaken espresso',
 	},
 	{

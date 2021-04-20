@@ -49,14 +49,7 @@ function LoginAdmin() {
 		if (spinTimer === 0 && userLoading) {
 			setSpinMsg(
 				<div className='mx-4'>
-					<p>
-						If you are waiting for more than 30 seconds, please refresh the page! It's because the backend API of this web app hosted at
-						Heroku (free tier). The server side goes to sleep after 30 minutes if there's no visitor and it needs about 30s to wake up.
-					</p>
-					<p>
-						Nếu bạn đợi lâu hơn 30 giây, hãy refresh lại page! Web app này được deploy tại Heroku (free tier). Trong vòng 30 phút không có
-						lượt truy cập sẽ off, nó cần từ 30s đến 1 phút để khởi động trở lại khi có lượt truy cập mới.
-					</p>
+					
 				</div>
 			);
 		}
@@ -127,7 +120,7 @@ function LoginAdmin() {
 					</div>
 					<div className='flex-shrink w-32 xs:w-96 sm:w-screen' />
 				</div>
-				<p className='text-gray-500 w-screen text-center'>username/password: admin1/12345</p>
+				<p className='text-gray-500 w-screen text-center'></p>
 				{errorMsg !== undefined ? (
 					<Snackbar open={openErrorMsg} autoHideDuration={5000} onClose={handleErrorClose}>
 						<MuiAlert elevation={6} variant='filled' severity='error' onClose={handleErrorClose}>
@@ -137,9 +130,9 @@ function LoginAdmin() {
 				) : null}
 				<div style={{ textAlign: 'center', marginTop: 'auto', height: '60px' }}>
 					<a href='/' className='text-green-700 text-base'>
-						Starbugs Coffee Client
+						Sunn Coffee Client
 					</a>
-					<p className='text-base text-gray-500'>Starbugs Coffee Admin ©2021</p>
+					<p className='text-base text-gray-500'>Sunn Coffee Admin ©2021</p>
 				</div>
 			</div>
 		</Spin>

@@ -156,7 +156,7 @@ function Login() {
 					</Spin>
 				</form>
 				<div className='login__rewards'>
-					<h4 style={{ color: 'white' }}>JOIN STARBUCKS® REWARDS</h4>
+					<h4 style={{ color: 'white' }}>JOIN SUNN REWARDS</h4>
 				</div>
 				<div className='login__joinNow'>
 					<div className='login__joinNowContainer'>
@@ -164,7 +164,7 @@ function Login() {
 							Join now
 						</JoinButton>
 						<h4>Create an account and bring on the Rewards!</h4>
-						<p>Join Starbucks® Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.</p>
+						<p>Join Sunn Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.</p>
 					</div>
 				</div>
 				<FooterSecondary paddingLeft={30} flexDirection='column' />

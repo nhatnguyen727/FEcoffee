@@ -17,7 +17,7 @@ function Dashboard() {
 							className='font-bold xs:font-bold sm:font-black text-lg xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl mb-0 md:mb-0 lg:mb-2 tracking-tighter xs:tracking-normal'
 							style={{ color: '#1e3932' }}
 						>
-							Starbugs Coffee Admin
+							Sunn Coffee Admin
 						</h1>
 						<h1
 							className='font-normal xs:font-normal sm:font-bold tracking-tight sm:tracking-normal md:tracking-wide text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl'
@@ -37,7 +37,7 @@ function Dashboard() {
 				<a href='/' className='text-green-700 text-base'>
 					Starbugs Coffee Client
 				</a>
-				<p className='text-base text-gray-500'>Starbugs Coffee Admin ©2021</p>
+				<p className='text-base text-gray-500'>Sunn Coffee Admin ©2021</p>
 			</div>
 		</Layout>
 	);
